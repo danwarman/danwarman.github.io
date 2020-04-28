@@ -36,6 +36,7 @@ body {
 /* Header */
 header {
   position: relative;
+  height: calc(100vh + 40px);
 }
 
 @media (max-width: 667px) {
@@ -105,4 +106,63 @@ header {
   .header .header__intro__subheading {
     font-size: 40px;
   }
+}
+
+/* Navigation */
+.navigation {
+  position: absolute;
+  height: 38px;
+  width: 100%;
+  background-color: lightcoral;
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 667px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media (min-width: 668px) {
+  .navigation {
+    bottom: 0;
+  }
+}
+
+.navigation--fixed {
+  position: fixed;
+  top: 0;
+}
+
+.navigation .navigation__list {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navigation .navigation__list .navigation__list__item {
+  list-style-type: none;
+}
+
+.navigation .navigation__list .navigation__list__item a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  min-height: 500px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+section:nth-child(even) {
+  background-color: floralwhite
+}
+
+/* Footer */
+footer {
+  background-color: mistyrose;
+  padding: 25px 20px;
+  box-sizing: border-box;
 }

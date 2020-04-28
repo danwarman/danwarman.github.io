@@ -25,7 +25,6 @@ Paste the following command in to macOS Terminal:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 ```
 
 #### Install Ruby
