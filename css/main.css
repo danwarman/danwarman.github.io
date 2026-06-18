@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Helvetica-Neue', Helvetica, sans-serif;
-  color: #4d3e3e;
+  color: #2c1f2c;
 }
 
 .flex {
@@ -47,7 +47,7 @@ header {
 .header {
   height: 100vh;
   width: 100%;
-  background-color: #f5efe0;
+  background-color: #cfd3d5;
 }
 
 .header .header__intro {
@@ -58,6 +58,13 @@ header {
 @media (max-width: 667px) {
   .header .header__intro {
     align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 668px) {
+  .header .header__intro {
+    text-align: center;
   }
 }
 
@@ -75,6 +82,32 @@ header {
   }
 }
 
+.header .header__intro__heading--image {
+  padding: 16px 0;
+  border-radius: 50%;
+}
+
+@media (max-width: 667px) {
+  .header .header__intro__heading--image {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 668px) {
+  .header .header__intro__heading--image {
+    max-width: 35%;
+  }
+}
+
+.header .header__intro__heading--social-icon {
+  height: 45px;
+  padding: 16px 0;
+}
+
+.header .header__intro__heading--social-icon:hover {
+  opacity: 0.6
+}
+
 .header .header__intro__heading br {}
 
 @media (max-width: 667px) {
@@ -90,7 +123,7 @@ header {
 }
 
 .header .header__intro__heading--highlight {
-  color: #ff926b;
+  color: #d86d3a;
 }
 
 .header .header__intro__subheading {}
